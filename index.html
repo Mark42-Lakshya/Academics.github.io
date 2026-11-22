@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lakshya's personal portfolio exploring robotics, astronomy and astrophysics.">
+    <title>Lakshya | Beyond Imagination</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ANIMATED BACKGROUND -->
+    <canvas id="starfield"></canvas>
+    <!-- BACKGROUND OVERLAY -->
+    <div class="background-overlay"></div>
+    <!-- FLOATING NAVIGATION -->
+    <nav class="floating-nav" aria-label="Main navigation">
+        <a href="#home" class="nav-item active" aria-label="Home" title="Home">
+            <svg viewBox="0 0 24 24">
+                <path d="M3 10.5L12 3l9 7.5V21h-6v-6H9v6H3z"/>
+            </svg>
+        </a>
+
+        <a href="#about" class="nav-item" aria-label="About" title="About">
+            <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="8" r="4"/>
+                <path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/>
+            </svg>
+        </a>
+
+        <a href="#projects" class="nav-item" aria-label="Projects" title="Projects">
+            <svg viewBox="0 0 24 24">
+                <rect x="3" y="4" width="18" height="16" rx="2"/>
+                <path d="M3 10h18M9 4v6"/>
+            </svg>
+        </a>
+
+        <a href="#ideas" class="nav-item" aria-label="Research" title="Research">
+            <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="3"/>
+                <ellipse cx="12" cy="12" rx="10" ry="5"
+                         transform="rotate(-30 12 12)"/>
+                <circle cx="20" cy="7" r="1"/>
+            </svg>
+        </a>
+
+        <a href="#skills" class="nav-item" aria-label="Skills" title="Skills">
+            <svg viewBox="0 0 24 24">
+                <path d="M8 8l-5 4 5 4M16 8l5 4-5 4M14 5l-4 14"/>
+            </svg>
+        </a>
+
+        <a href="#contact" class="nav-item" aria-label="Contact" title="Contact">
+            <svg viewBox="0 0 24 24">
+                <rect x="3" y="5" width="18" height="14" rx="2"/>
+                <path d="M3 7l9 7 9-7"/>
+            </svg>
+        </a>
+
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- HOME -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">
+                    EXPLORING SCIENCE • ENGINEERING • THE UNIVERSE
+                </p>
+                <h1>BEYOND <span>IMAGINATION</span></h1>
+                <p class="hero-subtitle">
+                    Astronomy & Astrophysics &nbsp; | &nbsp; Robotics
+                </p>
+                <p class="hero-description">
+                    Exploring the unknown, understanding the universe
+                    and turning imagination into reality.
+                </p>
+                <a href="#about" class="explore-btn">
+                    More about me.. <span>↓</span>
+                </a>
+            </div>
+
+            <div class="scroll-indicator">
+                SCROLL TO EXPLORE
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="content-section reveal">
+            <div class="section-heading">
+                <!--<span class="section-number">01 / INTRODUCTION</span>-->
+                <h2>About Me</h2>
+            </div>
+
+            <div class="about-card">
+                <!-- Add your photograph here if desired -->
+                <div style="text-align: center;">
+                    <img src="assets/profile_photo.jpeg" alt="Lakshya" class="profile-img">
+                </div>
+                     <!--<img src="assets/profile_photo.jpeg" alt="Lakshya" class="profile-img">-->
+                <!--<div>-->
+                    <h3>Hello, I'm Lakshya.</h3>
+                    <p>
+                        I am a second-year Integrated MSc student
+                        at the National Institute of Science Education
+                        and Research (NISER), Bhubaneswar.
+                    </p>
+                    <p>
+                        I have a strong interest in Astronomy and
+                        Astrophysics, particularly Solar Physics,
+                        Exoplanetary Atmospheres, Coronal Mass
+                        Ejections (CMEs), and Solar Granulation.
+                    </p>
+                    <p>
+                        Apart from theoretical science, I enjoy
+                        robotics, electronics, programming and
+                        building systems that connect physics
+                        with the real world.I am also present time member of NISER Astronomy Club Experiment & Session 
+                        Subcommittee and NISER Robo Tech Club, carrying out various projects and hands on experiments.
+                        In RTC, currently i am also involve in teaching our juniors batch about basics of electronic and robotics through RTC Skill Development program
+                        (called SDP) that train students and give hands on experience in this field.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="content-section reveal">
+            <div class="section-heading">
+                <!--<span class="section-number">02 / IMPLEMENTATION</span>-->
+                <h2>Projects</h2>
+            </div>
+            <h3 class="category-title">Astrometry</h3>
+            <div class="project-grid">
+                <article class="project-card">
+                    <span class="project-tag">Photmetry</span>
+                    <p>
+                        Aperture photometry is a technique used in astronomy to measure
+                        the brightness (flux) of celestial objects, such as stars or galaxies,
+                        by summing the pixel values within a defined geometric region, typically a 
+                        circle or ellipse, centered on the object.Every pixel in the aperture contains both source photons and sky photons. Sky photons
+                        must be estimated and subtracted. The standard procedure is to measure the sky level
+                        in a circular annulus centered on the source, with inner radius r(in) and outer radius
+                        r(out), where r (in) > r(apperture) by a comfortable margin of at least 2–3 pixels. The sky per pixel
+                        S(sky) is estimated from the statistics of the annulus pixels.
+                    </p>
+                    <div class="project-details">
+                        <p><strong>Tools:</strong>8 inch Newtonian telescope, CCD sensor</p>
+                        <p><strong>Status:</strong>Ongoing</p>
+                    </div>
+                    <button class="details-btn" type="button">
+                        View Details +
+                    </button>
+                </article>
+
+                <article class="project-card">
+                    <img src="assets/telescope.jpeg" 
+                    alt="CCD Camera Sensor" class="project-image">
+                </article>
+            </div>
+
+            <h3 class="category-title">Self reading projects</h3>
+            <div class="project-grid">
+                <article class="project-card">
+                    <span class="project-tag">The Sun</span>
+                    <h3>Coronal Mass Ejections</h3>
+                    <p>
+                        Implementing programming concepts
+                        through real-world electronic systems.
+                    </p>
+                    <div class="project-details">
+                        <p><strong>Status:</strong> Ongoing</p>
+                    </div>
+                    <!-- <button class="details-btn" type="button">
+                        View Details +
+                    </button> -->
+                </article>
+
+                <article class="project-card">
+                    <span class="project-tag">Exoplanets</span>
+
+                    <h3>Stellar Dynamics</h3>
+
+                    <p>
+                        Numerical exploration of stellar motion
+                        under simplified galactic gravitational models.
+                    </p>
+
+                    <div class="project-details">
+                        <p><strong>Status:</strong> Ongoing</p>
+                    </div>
+
+                    <!-- <button class="details-btn" type="button">
+                        View Details +
+                    </button> -->
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESEARCH IDEAS -->
+        <section id="ideas" class="content-section reveal">
+
+            <div class="section-heading">
+                <!--<span class="section-number">03 / EXPLORATION</span>-->
+                <h2>Worked Projects</h2>
+            </div>
+
+            <div class="project-grid">
+
+                <article class="project-card idea-card">
+
+                    <img src="assets/drone.jpeg"
+                         alt="Autonomous Drone System.">
+
+                    <div class="idea-content">
+                        <span class="project-tag">Robotics</span>
+
+                        <h3>Autonomous Vision based Drone System</h3>
+
+                        <p>
+                        
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="project-card idea-card">
+
+                    <img src="assets/line_follower.jpeg"
+                         alt="Line follower robot.">
+
+                    <div class="idea-content">
+                        <span class="project-tag">ROBOTICS</span>
+
+                        <h3>Line Follower Robot</h3>
+
+                        <p>
+                            Developing an autonomous robot capable
+                            of following a predefined path using
+                            sensors and PID control algorithms.
+                        </p>
+                    </div>
+
+                </article>
+
+                <article class="project-card idea-card">
+                    <img src="assets/gaming_controller.jpeg" alt="Gaming controller.">
+                    <div class="idea-content">
+                        <span class="project-tag">Electronics</span>
+                        <h3>Arduino based gaming controller</h3>
+                        <p>
+                            An exploration of joystick based control system and their integration with microcontrollers.
+                        </p>
+                    </div>
+
+                </article>
+
+                <artical class="project-card idea-card">
+                    <img src="assets/3D_tracker.jpeg" alt="Autonomous Vision based 3D tracker.">
+                    <div class="idea-content">
+                        <span class="project-tag">Robotics</span>
+                        <h3>Autonomous 3D tracker</h3>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </artical>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS -->
+        <section id="skills" class="content-section reveal">
+
+            <div class="section-heading">
+                <!--<span class="section-number">04 / CAPABILITIES</span>-->
+                <h2>Skills</h2>
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <span class="skill-symbol">&lt;/&gt;</span>
+                    <h3>Programming</h3>
+                    <p>C, Python, HTML, CSS</p>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-symbol">⌘</span>
+                    <h3>Robotics</h3>
+                    <p>Arduino, Sensors, Control Basics, Lazer printer, 3D printer</p>
+                </div>
+
+                <!-- <div class="skill-card">
+                    <span class="skill-symbol">∑</span>
+                    <h3>Physics</h3>
+                    <p>Classical Mechanics, Electromagnetism</p>
+                </div> -->
+
+                <div class="skill-card">
+                    <span class="skill-symbol">⚙</span>
+                    <h3>Tools</h3>
+                    <p>LaTeX, Git, Linux, numpy, pandus, matplotlib, openCV, Astropy (learning), </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section id="contact" class="content-section reveal">
+
+            <div class="section-heading">
+                <!--<span class="section-number">05 / CONNECT</span>-->
+                <h2>Contact</h2>
+            </div>
+
+            <div class="contact-card">
+
+                <h3>Feel free to connect.</h3>
+
+                <p>
+                    Interested in space science, research, robotics
+                    or collaboration? Feel free to get in touch.
+                </p>
+
+                <a href="mailto:lakshya.msc2025@niser.ac.in"
+                   class="contact-link">
+                    <span>✉</span> Email Me
+                </a>
+
+                <a href="https://github.com/mark42-lakshya"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="contact-link">
+                    <span>⌘</span> GitHub
+                </a>
+
+                <a href="assets/FINAL_CV.pdf"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="contact-link">
+                    <span>↓</span> Download CV
+                </a>
+
+                <a href="gallery.html" class="contact-link">
+                    <span>▧</span> Explore Photo Gallery
+                </a>
+
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Lakshya | BEYOND IMAGINATION</p>
+        <p>Curiosity has no boundaries.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
